@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+    font-size:20px;
+    padding: 5rem;
+}
+
+name {
+    justify-content: flex-end;
+}
+
+.header-title {
+    flex: 1;
+}
+
+.button-link {
+    text-align: right; /* 텍스트 정렬을 오른쪽으로 설정 */
+}
+
+.button-link button {
+    background-color: transparent;
+    border: 2px solid #000;
+    color: #000;
+    padding: 10px 20px;
+    right:0;
+    border-radius: 20px; /*버튼 모서리 둥글게 해줌*/
+}
+
+.button-link button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.thumbnail-post-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*3열로 설정*/
+    grid-gap: 20px; /*그리드 간격 설정*/
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.button button {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    color: #000;
+    padding: 10px 20px;
+    border-bottom-color: #000;
+    position: relative;
+    right: 740px;
+    top: 80px;
+    margin-right: 10px;
+}
+
+.thumbnail-post {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.thumbnail-post img {
+    max-width: 100%;
+    height: auto;
+}
+
+.thumbnail-post h3 {
+    margin-top: 10px;
+}
+
+
+/*드랍다운*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 20px; /*다른 드롭다운과의 간격 조절해줌*/
+    right: 860px;
+    top: 80px;
+}
+
+.dropdown-btn {
+    background-color: #f1f1f1;
+    color: #333;
+    padding: 7px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 90px; /*크기*/
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    left: 0; 
+}
+
+.dropdown-content div {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+}
+
+/*hover: 마우스를 갖다대었을 떄 속성 변하게 해주는 기능*/
+.dropdown-content div:hover {
+    background-color: #ddd;
+    color: #008000;
+    font-weight: bold
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*모달 팝업*/
+    .popup-image {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7); /*배경 흐리게*/
+    }
+    
+    .popup-image img {
+        display: block;
+        margin: 0 auto;
+        width: 50%; /*전체 화면의 50% 크기*/
+        height: 80%;
+        object-fit:cover;  /*사진 비율 유지*/
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /*가운데정렬*/
+    }
+    
+    .popup-image .close-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 24px;
+        cursor: pointer;
+        color: white;
+    }
+    /*https://velog.io/@bambi-bam/HTMLCSS-%EC%9D%B4%EB%AF%B8%EC%A7%80-%ED%81%AC%EA%B8%B0%EC%99%80-%EC%9C%84%EC%B9%98-%EC%A1%B0%EC%A0%88-%EB%B0%A9%EB%B2%95-3%EA%B0%80%EC%A7%80*/
+    
