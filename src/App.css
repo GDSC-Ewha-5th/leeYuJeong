@@ -1,0 +1,13 @@
+.st-search-form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.st-search-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  flex: 1;
+  margin-right: 10px;
+}
