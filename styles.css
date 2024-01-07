@@ -1,0 +1,46 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    align-items: flex-end;
+  }
+
+  
+  .main-container {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+
+  .note-box {
+    width: 70%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f9f9f9;
+    border-radius: 20px
+  }
+
+  button {
+    float: right;
+    background-color: #A9A9A9;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 20px;
+   
+  }
+  
+  button:hover {
+    background-color: #696969;
+  }
+  
